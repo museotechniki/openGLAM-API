@@ -1,0 +1,18 @@
+{
+  "name": "openglam-api",
+  "version": "0.0.1",
+  "description": "An open source API for museum collections based on node.js ",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Nikolaos Maniatis - Museotechniki Ltd (maniatis@museotechniki.com)",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "mongoose": "^4.5.7",
+    "node-restful": "^0.2.5"
+  }
+}
