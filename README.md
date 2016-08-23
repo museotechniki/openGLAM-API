@@ -11,7 +11,14 @@ $ npm install
 ```
 $ node server.js
 ```
-## Usage
+## Usage scenario
+
+- A developer/researcher is registering to use the API.
+- The new account waits for approval by admin
+- Admin is issuing an APIkey at approval.
+- During approval Admin can also change applicant's role from the default 'developer' to 'admin'
+- Ones APIkey has been issued user can use the API
+- User can find APIkey on the res.body after login (POST api/v1/users/login?email=YOUR@EMAIL.COM&password=YOUR_PASSWORD)
 
 ## API endpoinds
 
@@ -19,7 +26,7 @@ $ node server.js
 
 ## Credits
 
-- [Nikolaos Maniatis](https://github.com/nikmaniatis)
+- [Nikolaos Maniatis](https://github.com/nikmaniatis) | twitter:<[@n_maniatis] (https://twitter.com/n_maniatis)>
 
 ## Copyright & License
 
