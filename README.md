@@ -14,12 +14,12 @@ $ node server.js
 ## Usage  
 
 The project is still under development and nowhere near any stable version. The (so far) planed usage scenario for user authentication is:
-- A developer/researcher is registering to use the API.
+- A developer/researcher is registering to use the API. (POST api/v1/users/register)
 - The new account waits for approval by admin
-- Admin is issuing an APIkey at approval.
-- During approval Admin can also change applicant's role from the default 'developer' to 'admin'
-- Ones APIkey has been issued user can use the API
-- User can find APIkey on the res.body after login (POST api/v1/users/login?email=YOUR@EMAIL.COM&password=YOUR_PASSWORD)
+- Admin is issuing an APIkey at approval. (PUT api/v1/users/:id/auth?active=true)
+- During approval Admin can also change applicant's role from the default 'developer' to 'admin'(PUT api/v1/users/:id/auth?role=admin)
+- User can login to issue an APIkey. User gets back an APIkey on the res.body that returns after login (POST api/v1/users/login?email=YOUR@EMAIL.COM&password=YOUR_PASSWORD)
+- User can re-issue APIkey
 
 [TODO: usage scenario for the endpoinds]
 

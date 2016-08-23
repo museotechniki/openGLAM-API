@@ -26,10 +26,10 @@ module.exports = function(app) {
   apiRoutes.use('/v1/users', usersRoutes);
 
 // Registration route
-  usersRoutes.post('/register', UsersController.register);//to be corrected
+  usersRoutes.post('/register', UsersController.register);
 // Login route
-  usersRoutes.post('/login', requireLogin, UsersController.login);//to be corrected
-// Login route
+  usersRoutes.post('/login', requireLogin, UsersController.login);
+// Logout route
   usersRoutes.get('/logout', requireJwt, UsersController.logout);
 
   // to do Password reset & remind
